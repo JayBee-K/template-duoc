@@ -1,6 +1,6 @@
 :root {
 	--transition-default: 0.3s all ease-in-out;
-	--font-theme: 'Inter', Arial, Helvetica, sans-serif;
+	--font-theme: 'Noto Sans', Arial, Helvetica, sans-serif;
 	--size-theme: 14px;
 	--bs-gray-1000: #000000;
 }
