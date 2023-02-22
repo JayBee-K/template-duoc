@@ -25,8 +25,16 @@
 		}
 	}
 
+	const handleToggleSearch = function () {
+		$('.header-toggle_button').click(function () {
+			let header_search  = $('.header-toggle_button').closest('.header-search');
+			header_search.toggleClass('header-search_show');
+		});
+	}
+
 	$(function () {
 		handleSliderHero();
+		handleToggleSearch();
 		$(window).resize(() => {
 			windowWidth = $(window).width();
 		});

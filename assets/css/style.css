@@ -356,6 +356,100 @@
 	border-top: 1px solid rgba(0, 0, 0, .05);
 }
 
+.header .header-search {
+	margin-left: auto;
+	padding-left: 20px;
+}
+
+.header .header-search .header-search_toggle .header-toggle_button {
+	width: 38px;
+	height: 38px;
+	background-color: var(--primary-color);
+	border: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--bs-white);
+	border-radius: 5px;
+	font-size: 1.05em;
+}
+
+.header .header-search .header-search_toggle .header-toggle_button:hover {
+	background-color: var(--primary-hover);
+}
+
+.header .header-search .header-search_float {
+	z-index: 2;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	transform-origin: 50% 0;
+	pointer-events: none;
+	user-select: none;
+	visibility: hidden;
+	opacity: 0;
+	transform: rotateX(-90deg);
+	transform-style: preserve-3d;
+	transition: var(--transition-default);
+}
+
+.header .header-search .header-search_float .header-search_form {
+	width: 500px;
+	padding: 15px;
+	background-color: var(--bs-white);
+	-webkit-box-shadow: 1rem 1rem 3rem rgb(0 0 0 / 10%);
+	box-shadow: 1rem 1rem 3rem rgb(0 0 0 / 10%);
+}
+
+.header .header-search .header-search_float .header-search_form .search-form_inner {
+	display: flex;
+	position: relative;
+}
+
+.header .header-search .header-search_float .header-search_form .search-form_inner .search-form_inner--input {
+	width: 100%;
+	padding-right: 55px;
+	height: 44px;
+	font-size: 1.05em;
+	color: var(--bs-gray-1000);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-radius: 0.25rem;
+}
+
+.header .header-search .header-search_float .header-search_form .search-form_inner .search-form_inner--button {
+	width: 36px;
+	height: 36px;
+	background-color: var(--primary-color);
+	border: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--bs-white);
+	border-radius: 5px;
+	font-size: 1.05em;
+	position: absolute;top: 50%;
+	right: 5px;
+	transform: translateY(-50%);
+	z-index: 2;
+}
+
+.header .header-search .header-search_float .header-search_form .search-form_inner .search-form_inner--button:hover {
+	background-color: var(--primary-hover);
+}
+
+.header .header-search.header-search_show .header-search_float {
+	pointer-events: auto;
+	user-select: auto;
+	visibility: visible;
+	opacity: 1;
+	transform: rotateX(0);
+}
+
+.header .header-search.header-search_show .header-search_toggle .header-toggle_button i:before{
+	content: "\f00d";
+}
+
 .section-hero {
 	background-color: var(--primary-color);
 	padding-top: 30px;
