@@ -2,6 +2,19 @@
 	'use strict';
 	let windowWidth = $(window).width();
 
+	const handleStickyHeader = () => {
+		const header = $('#header');
+		const headerPosition = header.offset().top;
+		$(window).scroll(function () {
+			const scrollValue = $(window).scrollTop();
+			if (scrollValue > headerPosition) {
+				header.addClass('is-sticky');
+			} else {
+				header.removeClass('is-sticky');
+			}
+		});
+	}
+
 	const handleSliderHero = function () {
 		if ($('#slider-hero').length) {
 			new Swiper('#slider-hero .swiper', {
@@ -49,6 +62,7 @@
 	}
 
 	$(function () {
+		handleStickyHeader();
 		handleSliderHero();
 		handleSliderPartner();
 
