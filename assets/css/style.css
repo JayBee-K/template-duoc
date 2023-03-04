@@ -1041,11 +1041,11 @@
 }
 
 .section-hero .hero-content .hero-content_title {
-    font-size: 2.5em;
+    font-size: 3.25em;
     color: var(--bs-white);
     font-weight: 800;
     line-height: 1.4;
-    margin-bottom: 48px;
+    text-transform: uppercase;
 }
 
 .section-hero .slider-hero .swiper-actions {
@@ -1073,8 +1073,7 @@
     }
 
     .section-hero .hero-content .hero-content_title {
-        font-size: 1.7em;
-        margin-bottom: 32px
+        font-size: 2.25em;
     }
 
     .section-hero .hero-content .hero-content_description {
